@@ -151,7 +151,7 @@ def check(plan):
         if e["credits_counted"] != 3: issues.append(f"SNHU {e['code']}: credits must be 3")
     for e in by("Harvard Extension"):
         if e["credits_counted"] != 4: issues.append(f"HES {e['code']}: credits must be 4")
-        if "06" <= e["start"][5:7] <= "08": issues.append(f"HES {e['code']} starts {e['start']} in summer (expensive term) - move to Fall/January/Spring")
+        if "06-01" <= e["start"][5:10] <= "08-15": issues.append(f"HES {e['code']} starts {e['start']} in the summer term (expensive) - move to Fall (late Aug), January or Spring")
     sess = OrderedDict()
     for e in by("UMPI YourPace"):
         k = f"{e['start']}->{e['end']}"; v = sess.setdefault(k, {"cr": 0.0, "cost": 0.0, "n": 0})

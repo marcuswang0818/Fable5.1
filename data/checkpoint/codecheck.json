@@ -1,0 +1,635 @@
+{
+ "searches_run": 71,
+ "budget_exhausted": false,
+ "checks": [
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 100",
+   "title": "Introduction to Business",
+   "status": "not_found",
+   "evidence": "No catalog.umpi.edu entry surfaced for BUS 100; UMPI catalog instead lists BUS 107 'Introduction to Business and Economics' (catoid=4 coid=2293) and BUS 125 'Introduction to Business Computing' (3 cr).",
+   "correction": "Use BUS 107 Introduction to Business and Economics (3 cr, lower) as the gateway course [likely]; fallback BUS 125 Introduction to Business Computing (3 cr)."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "ECO 207",
+   "title": "Principles of Economics I: Macroeconomics",
+   "status": "wrong",
+   "evidence": "catalog.umpi.edu preview_course ECO 207 = 'Macro and Micro Economics', 3 credits, covering growth/recession, inflation, unemployment, regulation, development, trade — a COMBINED principles course, not macro-only.",
+   "correction": "Keep code ECO 207 but retitle 'Macro and Micro Economics' (3 cr, lower). Because it is combined, ASU will post it as ECN 2XX and it overlaps BOTH ULC ECN 211/212 and UCLA ECON XL 1/2 — pair it with at most one other principles course, or drop it for PHI 152 Introduction to Ethics (YourPace-confirmed)."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "ECO 208",
+   "title": "Principles of Economics II: Microeconomics",
+   "status": "not_found",
+   "evidence": "Searches of catalog.umpi.edu for ECO 208 returned only ECO 207 (combined) and BUS 107; no ECO 208 listing exists in any catalog year found.",
+   "correction": "Delete. Same-school 3-credit on-theme replacements: BUS 244 Management Information Systems (3 cr, catalog-confirmed) or PHI 152 Introduction to Ethics (YourPace-confirmed)."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "HTY 162",
+   "title": "United States History II",
+   "status": "confirmed",
+   "evidence": "catalog.umpi.edu HTY 162 'United States History II' 3 credits: Civil War/Reconstruction to present; listed with HTY 161 among gen-ed history courses. YourPace-format availability not separately confirmed (likely, gen-ed).",
+   "correction": "None (title matches)."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "PHI 151",
+   "title": "Introduction to Philosophy",
+   "status": "confirmed",
+   "evidence": "catalog.umpi.edu PHI 151 'Introduction to Philosophy' 3 credits (catoid 4 and 7). Snippet also states PHI 152 Introduction to Ethics 'is available through the UMPI YourPace program'.",
+   "correction": "None; PHI 152 Introduction to Ethics is the YourPace-confirmed alternate."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 301",
+   "title": "Business Law / Legal Environment of Business",
+   "status": "wrong",
+   "evidence": "Coursicle UMPI BUS list: Business Law I = BUS 352, Business Law II = BUS 353 (older catalog) — current catalog BUS 353 = 'Business Ethics' (catoid 7 coid 5436; catoid 9 coid 7299). No BUS 301 found.",
+   "correction": "BUS 352 Business Law I (3 cr, upper) [likely]."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 315",
+   "title": "Management Information Systems",
+   "status": "wrong",
+   "evidence": "Coursicle/catalog: BUS 315 is 'Operations and Supply Chain Management' (3 cr). MIS is BUS 244 'Management Information Systems' (catalog catoid 3 coid 1591, 3 cr, 200-level).",
+   "correction": "Keep BUS 315 but retitle 'Operations and Supply Chain Management' (3 cr, upper) — it replaces the planned BUS 340 slot; MIS content = BUS 244 (lower-division)."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 343",
+   "title": "Project Management (Fundamentals of Project Management)",
+   "status": "wrong",
+   "evidence": "catalog.umpi.edu BUS 343 = 'Project Risk and Cost Management', 3 credits, PMBOK risk/cost. umpi.edu PM-minor page: an 'Introduction to Project Management' course (uses MS Project) 'must be taken before BUS 343, BUS 400, BUS 359, and BUS 401'.",
+   "correction": "Keep BUS 343 with title 'Project Risk and Cost Management' (3 cr, upper) and schedule the YourPace 'Introduction to Project Management' course (code not captured — verify on catalog) before it in an earlier session."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 355",
+   "title": "Business Ethics",
+   "status": "wrong",
+   "evidence": "catalog.umpi.edu: Business Ethics is BUS 353 (3 cr; business & society, CSR, ethics, Constitution, contracts, torts, regulation). No BUS 355 found.",
+   "correction": "BUS 353 Business Ethics (3 cr, upper) [confirmed]."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 371",
+   "title": "Organizational Behavior",
+   "status": "wrong",
+   "evidence": "Coursicle UMPI BUS list: Organizational Behavior = BUS 341. No BUS 371 found.",
+   "correction": "BUS 341 Organizational Behavior (3 cr, upper) [likely]."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 340",
+   "title": "Operations Management",
+   "status": "wrong",
+   "evidence": "Operations content is BUS 315 'Operations and Supply Chain Management'. No BUS 340 found.",
+   "correction": "Slot is freed (BUS 315 already covers operations). Replace with BUS 359 IT Project Management (3 cr, upper; Coursicle/degreeforum-confirmed, requires the intro PM course) or BUS 440 Business Analytics (3 cr, upper; degreeforum wiki YourPace list)."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 385",
+   "title": "Human Resource Management",
+   "status": "wrong",
+   "evidence": "Coursicle UMPI BUS list: Human Resource Management = BUS 325. No BUS 385 found.",
+   "correction": "BUS 325 Human Resource Management (3 cr, upper) [likely]."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "BUS 470",
+   "title": "Strategic Management / Business Policy",
+   "status": "wrong",
+   "evidence": "catalog.umpi.edu BUS 489 'Business Policy & Strategy' 3 credits — integrates marketing, finance/accounting, operations, HR and IS via strategic management (capstone).",
+   "correction": "BUS 489 Business Policy & Strategy (3 cr, upper, capstone) [confirmed]."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "ENV 110",
+   "title": "Introduction to Environmental Science",
+   "status": "confirmed",
+   "evidence": "catalog.umpi.edu ENV 110 'Introduction to Environmental Science' 3-credit lecture (catoid 5 coid 3495; catoid 7 coid 5562). Search snippet: Environmental Studies courses are available through YourPace (format availability likely).",
+   "correction": "None."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "SOC 100",
+   "title": "Introduction to Sociology",
+   "status": "confirmed",
+   "evidence": "catalog.umpi.edu SOC 100 'Introduction to Sociology' 3 credits (catoid 3 coid 2077; catoid 8 coid 6872).",
+   "correction": "None."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "POS 201",
+   "title": "State and Local Government",
+   "status": "not_found",
+   "evidence": "No POS 201 found; snippets only show POS 101 as the prerequisite for other POS courses in the YourPace History & Political Science BA.",
+   "correction": "HTY 161 United States History I (3 cr, lower; catalog-confirmed, no ASU duplicate if ULC HST 109 is not used) or BUS 244 Management Information Systems (3 cr). POS 101 exists but duplicates ULC POS 110."
+  },
+  {
+   "school": "UMPI YourPace",
+   "code": "MAT 180",
+   "title": "Introduction to Statistics",
+   "status": "not_found",
+   "evidence": "catalog.umpi.edu statistics course is MAT 201 'Probability and Statistics I' (3 cr, catoid 7 coid 5655); no MAT 180.",
+   "correction": "MAT 201 Probability and Statistics I (3 cr) — only if BYU STAT 121 is dropped (duplicate STP 226 family)."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "COM SCI XL 31",
+   "title": "Introduction to Computer Science I",
+   "status": "confirmed",
+   "evidence": "uclaextension/espa course page: 4.0 units, online, 'as few as 11 weeks', next start Sep 21, 2026, 'Starting at $1,100.00' (Spring/Summer 2026 also $1,100).",
+   "correction": "Price $1,100 (not $1,125)."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "COM SCI XL 32",
+   "title": "Introduction to Computer Science II",
+   "status": "confirmed",
+   "evidence": "espa.unex.ucla.edu course page: 4.0 units, online, as few as 11 weeks, next start Sep 21, 2026, 'Starting at $1,095.00'; OOP/generic programming, data structures. Prerequisite not captured (assume XL 31).",
+   "correction": "Price $1,095."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "MATH XL 31B",
+   "title": "Integration and Infinite Series",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu/sciences-math/math-statistics/course/integration-and-infinite-series-math-xl-31b exists (also espa mirror). Fee not captured; sibling XL 33A is $1,100.",
+   "correction": "Budget $1,100 (likely)."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "MATH XL 32A",
+   "title": "Calculus of Several Variables",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu course page exists; prerequisite 'XL 31B Integration and Infinite Series with grade of C- or better'. Fee not captured.",
+   "correction": "Budget $1,100 (likely)."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "MATH XL 32B",
+   "title": "Calculus of Several Variables II",
+   "status": "not_found",
+   "evidence": "Searches of uclaextension.edu return only XL 32A; all 32B hits are main-campus math.ucla.edu pages. Not in the Extension math listing.",
+   "correction": "Replace with a confirmed 4-unit XL course: PHYSICS XL 10 (4 units, conceptual physics, page confirmed) or ECON XL 2 Principles of Economics: Macroeconomics (page confirmed, next start Sep 21, 2026)."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "MATH XL 33A",
+   "title": "Linear Algebra",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu/.../linear-algebra-math-xl-33a: fee $1,100; prerequisite 'Math 3B or 31B or 32A with grade of C or better'; Spring 2026 ran from Mar 30, 2026; an enrollment deadline of Sep 27, 2026 indicates a Fall 2026 section.",
+   "correction": "Prereq is 31B only (33A does not need 32A). Note MAT 342/343 exclusivity with SNHU MAT-350."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "MATH XL 33B",
+   "title": "Differential Equations",
+   "status": "not_found",
+   "evidence": "No uclaextension.edu page for XL 33B; every hit is main-campus Math 33B. Extension's math sequence tops out at XL 32A/33A. The '33B prerequisite' question is therefore moot.",
+   "correction": "Replace with ECON XL 1 Principles of Economics: Microeconomics (4 units, page confirmed) if ULC ECN 212 is dropped, otherwise PHYSICS XL 10 (4 units)."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "MATH XL 61",
+   "title": "Introduction to Discrete Structures",
+   "status": "not_found",
+   "evidence": "No uclaextension.edu listing; all hits are UCLA main-campus Math 61 syllabi.",
+   "correction": "Replace with COM SCI XL 32 (already in plan) — the eight-course set should be COM SCI XL 31, COM SCI XL 32, MATH XL 31B, MATH XL 32A, MATH XL 33A, PSYCH XL 10, ECON XL 2, PHYSICS XL 10 (all page-confirmed 4-unit XL courses)."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "MATH XL 115A",
+   "title": "Linear Algebra (upper-division)",
+   "status": "not_found",
+   "evidence": "Only 'MATH XLC 115B Linear Algebra' appears in the Extension portal (XLC = concurrent enrollment in a UCLA class, $497/unit, restricted); no XL 115A open-enrollment section.",
+   "correction": "No upper-division XL math available; drop and take the UD margin from UMPI. Use PHYSICS XL 10 or ECON XL 2 (4 units) to keep 32 quarter units."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "PSYCH XL 10",
+   "title": "Introductory Psychology",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu Introductory Psychology page: 4.0 units, 'Starting at $950.00'.",
+   "correction": "None."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "ECON XL 2",
+   "title": "Principles of Economics: Macroeconomics",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu/.../principles-economics-0 exists (online and in-person, next start Sep 21, 2026). Fee/units not captured in snippet (assume 4 units, ~$950 social-science tier).",
+   "correction": "None; price assumed $950."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "ECON XL 1",
+   "title": "Principles of Economics: Microeconomics",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu/.../principles-economics (Microeconomics) page exists. Fee/units not captured.",
+   "correction": "None; duplicate of ULC ECN 212 if both kept."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "PHYSICS XL 10",
+   "title": "Physics",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu/sciences-math/sciences/course/physics-physics-xl-10 exists; 2026 fee not re-captured (scout: $1,125).",
+   "correction": "None."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "PHYSICS XL 6B",
+   "title": "Physics for Life Sciences Majors: Electricity, Magnetism and Modern Physics",
+   "status": "confirmed",
+   "evidence": "uclaextension.edu course page exists (title differs from plan's 'Oscillations, Waves, Electric and Magnetic Fields'); 5 units per scout — breaks 4-unit arithmetic.",
+   "correction": "Title = 'Electricity, Magnetism and Modern Physics'; keep as alternate only."
+  },
+  {
+   "school": "UCLA Extension",
+   "code": "STATS XL 10",
+   "title": "Introduction to Statistical Reasoning",
+   "status": "likely",
+   "evidence": "uclaextension.edu page exists; one snippet reports 5 units, which would break the 32-unit total.",
+   "correction": "Do not use as a 4-unit filler."
+  },
+  {
+   "school": "Harvard Extension",
+   "code": "PHYS E-123",
+   "title": "Laboratory Electronics: Analog and Digital Circuit Design",
+   "status": "wrong",
+   "evidence": "HES lists ENSC E-123 'Laboratory Electronics: Digital Circuit Design' (CRN 25768): microprocessors/microcontrollers, PLDs, A/D interfacing, build a microcomputer from chip level; Spring 2023 syllabus shows 4 credits, offered for Undergraduate and Graduate credit. PHYSICS 123 (analog+digital) is the Harvard College course, not HES. Lab-kit cost not found; on-campus lab courses carry a $150 lab fee (HES tuition page).",
+   "correction": "ENSC E-123 Laboratory Electronics: Digital Circuit Design (4 cr, UG credit, historically Spring term; verify 2027 term and kit/lab fee)."
+  },
+  {
+   "school": "Harvard Extension",
+   "code": "GOVT E-1820",
+   "title": "Grand Strategy and US Foreign Policy",
+   "status": "likely",
+   "evidence": "harvard.simplesyllabus Spring Term 2025 GOVT E-1820 'Grand Strategy/US Foreign Pol' exists; 2026-27 roster not visible (registration for Spring 2027 opens Nov 5, 2026).",
+   "correction": "Verify Spring 2027 roster; fallbacks GOVT E-1897 / E-1113."
+  },
+  {
+   "school": "Harvard Extension",
+   "code": "CSCI E-45b",
+   "title": "The Cyber World: Governance, Threats, Conflict, Privacy, Identity, and Commerce",
+   "status": "confirmed",
+   "evidence": "extension.harvard.edu course catalog CSCI E-45B CRN 24037 (companion CSCI E-45A CRN 14299); both required for the Network & Cybersecurity certificate and 'may be taken in any order' (so E-45a is not a prerequisite). Term not captured (historically spring).",
+   "correction": "None."
+  },
+  {
+   "school": "Harvard Extension",
+   "code": "ENVR E-101",
+   "title": "Introduction to Sustainability and Environmental Management",
+   "status": "wrong",
+   "evidence": "ENVR E-101 is now 'Proseminar: Introduction to Graduate Studies in Sustainability and Global Development' — a writing-focused graduate proseminar for ALM degree candidates, prerequisite = HES critical reading/writing test or B+ in EXPO E-42b, Saturdays 10-12 (Jan 26-May 16). Not an undergraduate-credit course.",
+   "correction": "ENVR E-102 Design of Renewable Energy Projects (HES CRN 21783; Fall-term syllabus 2023; taught by Ramon Sanchez, Tue 7:40-9:40pm; 4 cr; UG-credit status must be confirmed on the catalog page) — best on-theme energy pick; alternates ENVR E-119D Zero Energy and Passive Buildings (CRN 24776), ENVR E-119E Sustainable Infrastructure (CRN 25775), ENVR E-140 Fundamentals of Ecology for Sustainable Ecosystems (CRN 12779)."
+  },
+  {
+   "school": "Harvard Extension",
+   "code": "GOVT E-1113",
+   "title": "Democracy's Century: Democratic Transitions",
+   "status": "likely",
+   "evidence": "Not re-found on the 2026-27 roster this round; scout confirmed it from a Fall 2020 syllabus; GOVT offerings rotate.",
+   "correction": "Verify on courses.dce.harvard.edu after Nov 5, 2026."
+  },
+  {
+   "school": "Harvard Extension",
+   "code": "GOVT E-1897",
+   "title": "American Foreign Policy",
+   "status": "likely",
+   "evidence": "Not re-found on the 2026-27 roster this round; scout confirmed from a past syllabus.",
+   "correction": "Verify on courses.dce.harvard.edu."
+  },
+  {
+   "school": "Harvard Extension",
+   "code": "PHYS E-1bx",
+   "title": "Physics II (Lecture): Electromagnetism, Circuits, Waves, Optics",
+   "status": "confirmed",
+   "evidence": "HES catalog CRN 24293; Spring Term 2026 simplesyllabus sections 1 and 2 exist; separate labs PHYS E-1bxl and PHYS E-1LAB (CRN 25323). Spring 2027 listing not yet published.",
+   "correction": "None (duplicate of BYU PHSCS 106 — keep only one)."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "POLI 170",
+   "title": "Introduction to International Politics",
+   "status": "confirmed",
+   "evidence": "is.byu.edu/catalog/POLI-170-M004: University course, 3.00 credit hours (cached price $747).",
+   "correction": "None."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "GEOL 101",
+   "title": "Introduction to Geology",
+   "status": "confirmed",
+   "evidence": "BYU IS catalog: GEOL 101 University course, 3.00 credit hours, $790.00 (cached page).",
+   "correction": "None; note $790 cached price (see price updates)."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "HIST 201",
+   "title": "World Civilization to 1500",
+   "status": "confirmed",
+   "evidence": "BYU IS catalog: HIST 201 University course 3.00 cr ($747 cached).",
+   "correction": "None."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "HIST 202",
+   "title": "World Civilization since 1500",
+   "status": "confirmed",
+   "evidence": "BYU IS catalog: HIST 202 University course 3.00 cr ($747 cached).",
+   "correction": "None."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "PHSCS 105",
+   "title": "General Physics 1",
+   "status": "confirmed",
+   "evidence": "is.byu.edu catalog PHSCS-105-M001 listing.",
+   "correction": "None."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "PHSCS 106",
+   "title": "General Physics 2",
+   "status": "confirmed",
+   "evidence": "is.byu.edu/catalog/PHSCS-106-300-001; enroll anytime, one year to complete.",
+   "correction": "None."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "STAT 121",
+   "title": "Principles of Statistics",
+   "status": "confirmed",
+   "evidence": "Listed among BYU IS university courses (PHSCS 105, 106, 121, STAT 121) in search snippet; scout had STAT-121-300-001.",
+   "correction": "None."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "GEOG 120",
+   "title": "Geography and World Affairs",
+   "status": "confirmed",
+   "evidence": "is.byu.edu/catalog/GEOG-120-M002 'Geography of World Affairs', University course, 3.00 credit hours (GEOG 130 also listed).",
+   "correction": "Title is 'Geography of World Affairs'."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "ENGL 316",
+   "title": "Technical Communication",
+   "status": "likely",
+   "evidence": "is.byu.edu/catalog/ENGL-316-M002 page exists; BYU CE catalog now lists it as WRTG 316 Technical Communication, 3.00 cr ($717 cached), enroll anytime, one year to complete.",
+   "correction": "Enroll under current code WRTG 316 Technical Communication (3 cr, 300-level upper-division)."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "PHIL 213",
+   "title": "Introduction to Ethics",
+   "status": "not_found",
+   "evidence": "Only catalog.byu.edu (campus) entries found; no is.byu.edu listing.",
+   "correction": "BYU HIST 202 World Civilization since 1500 (3 cr, IS-confirmed) or GEOG 130 Human Geography (3 cr, IS-confirmed GEOG-130-300-001)."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "CS 142",
+   "title": "Introduction to Computer Programming",
+   "status": "not_found",
+   "evidence": "No is.byu.edu listing for CS 142 (BYU renumbered its intro programming course; IS availability unconfirmed).",
+   "correction": "Do not plan; use HIST 202 or GEOG 130 (IS-confirmed) if a filler is needed."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "POLI 110",
+   "title": "American Government and Politics",
+   "status": "confirmed",
+   "evidence": "Scout: is.byu.edu/catalog/POLI-110-M002 (not re-searched; no contrary evidence).",
+   "correction": "None (duplicate of ULC POS 110 — keep only one)."
+  },
+  {
+   "school": "BYU Independent Study",
+   "code": "ECON 110",
+   "title": "Economic Principles and Problems",
+   "status": "confirmed",
+   "evidence": "is.byu.edu/catalog/ECON-110-200 listing exists.",
+   "correction": "None (combined principles — overlaps ECN 211/212)."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "HST 102",
+   "title": "Western Civilization",
+   "status": "likely",
+   "evidence": "Not re-surfaced this round (sitemap query showed HST 110 but not HST 102); scout confirmed earlier from courses.ulc.asu.edu.",
+   "correction": "Verify session availability on courses.ulc.asu.edu; native fallback HST 110 (confirmed URL courses.ulc.asu.edu/united-states-since-1865-hst-110/)."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "RAS 210",
+   "title": "Computer-Aided Design and Manufacturing (CAD/CAM)",
+   "status": "confirmed",
+   "evidence": "ULC newsroom: RAS 210 CAD/CAM available in 2026.",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "TEL 111",
+   "title": "Online Education Exploration",
+   "status": "confirmed",
+   "evidence": "courses.ulc.asu.edu TEL 111 course PDF: 'satisfies 3 credit hours toward the Social-Behavioral Sciences (SB) General Studies requirement' — i.e., 3 credits (Maroon SB code; Gold SOBE attachment to verify).",
+   "correction": "Credit value = 3 (not 1)."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "CIS 308",
+   "title": "Advanced Excel in Business",
+   "status": "confirmed",
+   "evidence": "ULC catalog snippet lists CIS 308 Advanced Excel in Business among Universal Learner Courses.",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "PHY 194",
+   "title": "Energy Matters",
+   "status": "confirmed",
+   "evidence": "ULC offers PHY 194 Energy Matters (degreeforum 'New ASU ULC Courses: 1 in Physics (no lab)' + catalog snippet).",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "AST 111",
+   "title": "Introduction to Solar Systems Astronomy",
+   "status": "confirmed",
+   "evidence": "courses.ea.asu.edu AST 111: 'session-based course that lasts 8 weeks (A and B sessions) or 16 weeks (C Session)'; Fall A 2024 syllabus exists — confirms ULC runs 8-week A/B sessions.",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "BIO 100",
+   "title": "The Living World",
+   "status": "likely",
+   "evidence": "Not re-surfaced this round; scout confirmed (4 cr lab, SCIT).",
+   "correction": "Verify summer 2027 session-based availability."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "CHM 114",
+   "title": "General Chemistry for Engineers",
+   "status": "confirmed",
+   "evidence": "ULC catalog snippet lists CHM 114 General Chemistry for Engineers.",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "SOS 100",
+   "title": "Introduction to Sustainability",
+   "status": "confirmed",
+   "evidence": "ulc.asu.edu newsroom 'Understanding sustainability' article: SOS 100 Introduction to Sustainability available at courses.ulc.asu.edu.",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "POS 110",
+   "title": "American Government and Politics",
+   "status": "confirmed",
+   "evidence": "ULC course description found (major institutions of modern government, American experience).",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "HST 110",
+   "title": "United States Since 1865",
+   "status": "confirmed",
+   "evidence": "courses.ulc.asu.edu sitemap contains /united-states-since-1865-hst-110/.",
+   "correction": "None."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "HST 101",
+   "title": "Modern Global History",
+   "status": "likely",
+   "evidence": "Not re-surfaced this round; scout confirmed.",
+   "correction": "Verify."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "GCU 102",
+   "title": "Introduction to Human Geography",
+   "status": "likely",
+   "evidence": "Not re-surfaced this round; scout confirmed.",
+   "correction": "Verify."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "MAT 142",
+   "title": "College Mathematics",
+   "status": "likely",
+   "evidence": "Not re-surfaced this round; scout confirmed.",
+   "correction": "Verify."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "ECN 211",
+   "title": "Macroeconomic Principles",
+   "status": "likely",
+   "evidence": "Not re-surfaced this round; scout confirmed via ULC partner page.",
+   "correction": "Verify."
+  },
+  {
+   "school": "ASU ULC",
+   "code": "ECN 212",
+   "title": "Microeconomic Principles",
+   "status": "likely",
+   "evidence": "Not re-surfaced this round; scout confirmed via ULC partner page.",
+   "correction": "Verify."
+  },
+  {
+   "school": "SNHU",
+   "code": "IDS-401",
+   "title": "Global Society",
+   "status": "confirmed",
+   "evidence": "Coursehero SNHU 'IDS 401: Global Society' (role of the individual in a global society); SNHU catalog lists IDS 400/401/402/403/404 as 3-credit interdisciplinary seminar electives.",
+   "correction": "None."
+  },
+  {
+   "school": "SNHU",
+   "code": "IDS-403",
+   "title": "Technology, Society and Culture",
+   "status": "wrong",
+   "evidence": "SNHU LibGuides 'IDS 403 - Technology and Society'; coursehero/studocu 'IDS 403: Technology and Society'.",
+   "correction": "IDS-403 Technology and Society (3 cr, 400-level) — code correct, title corrected."
+  },
+  {
+   "school": "SNHU",
+   "code": "IDS-400",
+   "title": "Diversity and Society",
+   "status": "likely",
+   "evidence": "IDS 400 appears in the SNHU IDS seminar list (400-404); title not confirmed by snippet.",
+   "correction": "Verify title on catalog.snhu.edu."
+  },
+  {
+   "school": "SNHU",
+   "code": "MAT-350",
+   "title": "Applied Linear Algebra",
+   "status": "confirmed",
+   "evidence": "SNHU MAT 350 syllabus: Online; prerequisites 'MAT 210 or MAT 225 with a grade of C or better'.",
+   "correction": "Prereq = MAT 210 (Applied Calculus) OR MAT 225 (Calculus I), C or better — ULC MAT 265 should satisfy either."
+  },
+  {
+   "school": "SNHU",
+   "code": "SCI-220",
+   "title": "Energy and Society",
+   "status": "confirmed",
+   "evidence": "Scout: snhu.edu/online-degrees/classes/energy-and-society (not re-searched).",
+   "correction": "None."
+  },
+  {
+   "school": "ASU transfer rules",
+   "code": "MAT 342/343",
+   "title": "Linear algebra credit exclusivity",
+   "status": "confirmed",
+   "evidence": "ASU catalog/CISA: MAT 343 Applied Linear Algebra, prereq MAT 266 or 271 with C or better, 'credit is allowed for only MAT 342 or 343'.",
+   "correction": "UCLA MATH XL 33A and SNHU MAT-350 cannot both post as MAT 342/343 — keep one."
+  },
+  {
+   "school": "ASU transfer rules",
+   "code": "CSE 100/110",
+   "title": "Intro programming credit exclusivity",
+   "status": "likely",
+   "evidence": "Current catalog entry with the exact phrase not surfaced; archived ASU catalogs (1999-2003) use 'credit is allowed for only' language for the CSE 100/110 family.",
+   "correction": "Treat as exclusive (keep UCLA COM SCI XL 31, drop ULC CSE 110)."
+  },
+  {
+   "school": "ASU transfer rules",
+   "code": "ASU 101",
+   "title": "The ASU Experience waiver for transfers",
+   "status": "confirmed",
+   "evidence": "SEMTE ASU 101 FAQ: 'ASU 101 is required for first-year students with 23 or fewer transferable credits'; ASU admission treats 24+ transferable credits as transfer admits.",
+   "correction": "Student enters with far more than 24 credits — ASU 101 not required; no substitute course needed."
+  }
+ ],
+ "calendar_price_updates": [
+  "UMPI YourPace: flat $1,800 per 8-week undergraduate session ($2,450 graduate), 'no course limit' / 'take as many courses as you like' (umpi.edu/yourpace/tuition, FAQs, 2026). Non-degree/certificate enrollment page exists (umpi.edu/yourpace/certificates-and-non-degree-options). Fall 2026 Session 1 begins Mon Aug 31, 2026 (2026-27 YourPace calendar PDF title); the PDF and degreeforum calendar thread are blocked by the proxy, so Fall 2 (~Oct 26, 2026), Spring 1 (~Jan 11, 2027), Spring 2 (~Mar 8, 2027) and Summer 2027 dates remain extrapolated. Per-session course caps for new students not verified (handbook PDF blocked).",
+  "UCLA Extension 2026 fees: COM SCI XL 31 $1,100 (4 units); COM SCI XL 32 $1,095 (4 units); MATH XL 33A $1,100 (4 units); PSYCH XL 10 $950 (4 units); ECON XL 2 fee not captured (assume ~$950). Fall 2026 start Sep 21, 2026 confirmed on course pages ('next start date September 21, 2026'); MATH XL 33A enrollment deadline Sep 27, 2026. Extension Academic Term Calendar page lists Fall 2026 / Winter 2027 / Spring 2027 / Summer 2027 PDFs but end dates were not extractable (keep ~Dec 12, Jan 4-Mar 19, Mar 29-Jun 11, Jun 21-Sep 10 as likely).",
+  "Harvard Extension 2026-27: $2,260 per 4-credit undergraduate-credit course (extension.harvard.edu premedical/tuition page); on-campus lab courses add a $150 lab fee. January session Jan 4-23, 2027 confirmed; Spring 2027 registration opens Nov 5, 2026. ENSC E-123 home lab-kit cost not found.",
+  "BYU Independent Study: is.byu.edu tuition page still shows $256/credit (effective Sep 3, 2025) = $768 per 3-credit course; but cached catalog pages show GEOL 101 at $790 (=$263.33/credit) alongside older $747/$717 pages — a 2026-27 increase to ~$790 per 3-credit course is possible; budget $768-$790.",
+  "ASU ULC: $25 enroll + $400 conversion = $425 per course (ulc.asu.edu/how-to-enroll/pricing, 2026); up to one year to convert. Session-based ULC courses DO run in 8-week A/B sessions and 16-week C sessions (AST 111 page) — resolves the earlier caution that only 12/16-week formats exist.",
+  "SNHU: $354 per undergraduate credit for individual online classes (snhu.edu/online-degrees/classes, 2026-27) = $1,062 per 3-credit course; individual courses open to non-degree students ('students attending other universities'); 8-week terms; confirmed undergraduate starts Oct 26, 2026, Jan 4, 2027, Mar 1, 2027."
+ ],
+ "transfer_rule_findings": [
+  "ASU: 'credit is allowed for only MAT 342 or 343' confirmed — UCLA MATH XL 33A and SNHU MAT-350 collide; keep exactly one linear-algebra course.",
+  "ASU: CSE 100/CSE 110 exclusivity not re-found in the live catalog but consistent with archived catalog wording — treat as exclusive (likely).",
+  "ASU General Studies Gold: no policy text found stating whether one course may satisfy two Gold designations — remains an assumption; plan for one course per designation and ask CISA.",
+  "ASU transfer policy (catalog.asu.edu/transfer): accepts traditional college-level coursework graded C- or better from regionally accredited institutions; refuses CEUs, continuing-education non-credit, workshops, seminars, professional-development and other not-for-credit courses. Competency-based (UMPI YourPace) credit is not addressed — YourPace posts conventional course numbers, credits and letter grades, so it should transfer as ordinary coursework (likely). UCLA Extension X 400-series is not addressed by name; it is post-baccalaureate professional credit per UCLA, so keep the plan to XL 1-199 only.",
+  "ASU 101 is required only for first-year students with 23 or fewer transferable credits (SEMTE FAQ) — the student, arriving with 100+ credits, is exempt; no substitute needed.",
+  "UMPI ECO 207 is a combined 'Macro and Micro Economics' course (and BYU ECON 110 likewise) — ASU will post either as ECN 2XX elective and may refuse it if ECN 211 and ECN 212 are already on record; hold only one economics principles source per ASU number.",
+  "HES ENVR E-101 has become a graduate-only proseminar with a writing-test prerequisite — it cannot be taken for undergraduate credit and must be replaced (ENVR E-102 etc.).",
+  "HES CSCI E-45a/E-45b 'may be taken in any order' — E-45a is not a prerequisite for E-45b.",
+  "SNHU MAT-350 prerequisite: MAT 210 or MAT 225 with C or better (ULC MAT 265 should be accepted as MAT 225 equivalent; submit ASU transcript).",
+  "UMPI project-management sequence: an 'Introduction to Project Management' course must be completed before BUS 343, BUS 359, BUS 400 and BUS 401 — schedule it in the first UMPI session."
+ ],
+ "notes": "Ran 71 WebSearch calls; budget never errored. WebFetch/curl are blocked for catalog.umpi.edu, degreeforum.miraheze.org and umpi.edu PDFs (CONNECT 403), so every UMPI fact rests on search snippets from catalog.umpi.edu course previews, coursicle and the degreeforum wiki. Headline corrections the planner must apply: (1) UMPI — most planned BUS codes were wrong: use BUS 107 (intro business & econ), BUS 352 (Business Law I), BUS 353 (Business Ethics), BUS 341 (Organizational Behavior), BUS 325 (HRM), BUS 315 (Operations & Supply Chain Mgmt — not MIS), BUS 244 (MIS, lower), BUS 343 (Project Risk & Cost Mgmt, needs the intro PM course first), BUS 359 (IT Project Management), BUS 489 (Business Policy & Strategy capstone); ECO 207 is a COMBINED macro+micro course and ECO 208 does not exist; MAT 180 does not exist (stats = MAT 201); POS 201 not found; HTY 161/162, PHI 151/152, ENV 110, SOC 100 confirmed. YourPace-format availability of each is likely but only PHI 152 was explicitly tagged YourPace in a snippet. (2) UCLA Extension — MATH XL 33B, XL 32B, XL 61 and XL 115A are NOT offered by Extension (only XL 31A/31B/32A/33A exist), so the engineering-math ladder ends at 32A/33A; a fully page-confirmed 8 x 4-unit set is COM SCI XL 31 ($1,100), COM SCI XL 32 ($1,095), MATH XL 31B, MATH XL 32A, MATH XL 33A ($1,100), PSYCH XL 10 ($950), ECON XL 2, PHYSICS XL 10 — but XL 33A duplicates SNHU MAT-350 (MAT 342/343 rule) and ECON XL 2 duplicates any other macro course, so either swap SNHU MAT-350 for IDS-400 or swap XL 33A for ECON XL 1 (which in turn duplicates ULC ECN 212). No upper-division XL course is available at UCLA, so the 45-UD margin must come from UMPI/SNHU/HES/BYU WRTG 316. (3) HES — 'PHYS E-123' is really ENSC E-123 Laboratory Electronics: Digital Circuit Design (4 cr, UG credit offered, historically spring); ENVR E-101 is now a graduate-only proseminar and must be replaced (ENVR E-102 Design of Renewable Energy Projects is the best on-theme candidate; confirm UG-credit status); CSCI E-45b, PHYS E-1bx, GOVT E-1820 confirmed to exist, 2026-27 terms unverified until the Nov 5, 2026 registration roster. (4) BYU — POLI 170, GEOL 101, HIST 201/202, GEOG 120, PHSCS 105/106, STAT 121, ECON 110 confirmed on is.byu.edu; ENGL 316 is now WRTG 316; PHIL 213 and CS 142 not on IS (use HIST 202 / GEOG 130). Cached course pages show $790 per 3-credit course, so a 2026-27 price rise is possible. (5) ULC — RAS 210, TEL 111 (3 credits, SB), CIS 308, PHY 194, AST 111 (8-week A/B or 16-week C sessions), CHM 114, SOS 100, POS 110, HST 110 confirmed this round; HST 102, HST 101, GCU 102, MAT 142, ECN 211/212, BIO 100 remain 'likely' from the scout; per-course 2027 session availability could not be checked. (6) SNHU — IDS-401 Global Society and IDS-403 'Technology and Society' (title corrected) confirmed; MAT-350 prereq MAT 210 or MAT 225 (C or better); individual courses open to non-degree students at $354/credit; any 60-credit gate on IDS-4xx for visiting students remains unverified. (7) ASU — MAT 342/343 exclusivity confirmed; CSE 100/110 exclusivity likely; Gold single-designation rule unverified; ASU 101 not required above 23 transfer credits. Unverified after this pass: exact UMPI 2026-27 session dates beyond Aug 31, 2026; UMPI per-session pacing for new students; UCLA quarter end dates; HES 2026-27 GOVT/ENVR term assignments; ENSC E-123 kit cost; ULC per-session 2027 offerings; SNHU IDS registration gating."
+}

@@ -221,14 +221,27 @@ The previous session's search budget ran out before the round-2 reviews, so many
  G. ASU transfer rules: 'credit is allowed for only CSE 100 or CSE 110'; 'MAT 342 or MAT 343'; whether General Studies Gold allows one course to satisfy two Gold designations; ASU treatment of UCLA Extension X 400-series and of competency-based transfer credit; ASU 101 waiver for transfer students.
 For every code report status confirmed / likely / not_found / wrong with the snippet evidence and a correction or replacement (same school, same credits, on-theme). Put price/calendar updates and transfer-rule findings in their own arrays. Be honest about what you could not verify and report searches_run and budget_exhausted.`
 
-const [review3, codecheck] = await parallel([
-  () => agent(REVIEW3_PROMPT, { label: 'review:prerequisite-timeline', phase: 'Round 2', schema: REVIEW3_SCHEMA, effort: 'xhigh' }),
-  () => agent(CODECHECK_PROMPT, { label: 'scout:verify-codes', phase: 'Round 2', schema: CODECHECK_SCHEMA, effort: 'high' }),
-])
-if (!review3) throw new Error('reviewer #3 returned null')
-log(`Round 2 done: reviewer #3 ${review3.findings.length} findings, ${review3.reconciled_union.length} union rows; code scout ${codecheck ? codecheck.checks.length + ' checks, ' + codecheck.searches_run + ' searches' : 'FAILED'}`)
-const REVIEW3_JSON = JSON.stringify(review3, null, 1)
-const CODECHECK_JSON = codecheck ? JSON.stringify(codecheck, null, 1) : '(code-verification scout failed; rely on the checkpoint confidence tags)'
+// Pass args {round2FromDisk: true} to skip the two round-2 agents and let the settle agent read their
+// saved outputs (data/checkpoint/review3.json, codecheck.json) — for resuming in a fresh session/container.
+const FROM_DISK = !!(args && args.round2FromDisk)
+let review3 = null, codecheck = null
+if (FROM_DISK) {
+  log('Round 2 taken from disk: data/checkpoint/review3.json and codecheck.json (the settle agent reads them)')
+} else {
+  const r2 = await parallel([
+    () => agent(REVIEW3_PROMPT, { label: 'review:prerequisite-timeline', phase: 'Round 2', schema: REVIEW3_SCHEMA, effort: 'xhigh' }),
+    () => agent(CODECHECK_PROMPT, { label: 'scout:verify-codes', phase: 'Round 2', schema: CODECHECK_SCHEMA, effort: 'high' }),
+  ])
+  review3 = r2[0]; codecheck = r2[1]
+  if (!review3) throw new Error('reviewer #3 returned null')
+  log(`Round 2 done: reviewer #3 ${review3.findings.length} findings, ${review3.reconciled_union.length} union rows; code scout ${codecheck ? codecheck.checks.length + ' checks, ' + codecheck.searches_run + ' searches' : 'FAILED'}`)
+}
+const REVIEW3_JSON = FROM_DISK
+  ? '(Read the file ' + REPO + '/data/checkpoint/review3.json IN FULL with the Read tool: reviewer #3\'s conflict_resolutions, findings, dependency_graph, ordered_timeline, the 49-row reconciled_union with ISO dates, and notes. It was produced BEFORE the code scout ran, so apply the scout corrections on top of it.)'
+  : JSON.stringify(review3, null, 1)
+const CODECHECK_JSON = FROM_DISK
+  ? '(Read the file ' + REPO + '/data/checkpoint/codecheck.json IN FULL with the Read tool: 76 course-code / calendar / price checks with corrections from 71 live searches.)'
+  : (codecheck ? JSON.stringify(codecheck, null, 1) : '(code-verification scout failed; rely on the checkpoint confidence tags)')
 
 // ---------------------------------------------------------------------------
 // Phase: Settle → deterministic check + three lenses → fix loop
